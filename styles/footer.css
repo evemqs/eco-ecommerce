@@ -1,5 +1,5 @@
 footer {
-  background-color: #4A392D;
+  background-color: #534236;
 }
 
 footer #about {
@@ -27,7 +27,7 @@ footer p {
 }
 
 footer section ul li a:hover {
-  text-decoration: solid underline rgb(0, 0, 0) 1px;
+  text-decoration: solid underline rgb(255, 255, 255) 1px;
   transition: 1s;
 }
 
@@ -51,12 +51,6 @@ footer .icones {
   display: flex;
   justify-content: center;
 }
-
-footer #nossa-empresa, #atendimento{
-  width: 25rem;
-
-}
-
 
 footer #redes-sociais li {
   margin: 0 1rem;

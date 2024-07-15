@@ -15,80 +15,58 @@
   <header>
     <nav id="navbar">
       <section class="hd-grid">
-        <div class="left-icons">
-          <div class="hamburger-menu"></div>
-          <div class="container-search">
-            <span class="material-symbols-outlined">search</span>
-            <input type="text" placeholder="O que você busca hoje?" name="text" class="input">
-          </div>
-        </div>
-
+        <div class="hamburger-menu"></div>
         <a href="./index.html" class="logo">Eco&Commerce</a>
 
-        <div class="right-icons">
+        <ul class="categorias">
+          <li><a href="./pages/products/products.html?category=clothes">Roupas</a></li>
+          <li><a href="./pages/products/products.html?category=cosmetics">Cosméticos</a></li>
+          <li><a href="./pages/products/products.html?category=materials">Materiais</a></li>
+          <li><a href="./pages/products/products.html?category=handmade">Artesanato</a></li>
+          <li><a href="./pages/products/products.html?category=plants">Plantas</a></li>
+          <li><a href="./pages/products/products.html?category=furniture">Móveis</a></li>
+        </ul>
+
+        <div class="icons">
+          <div class="container-search">
+            <input type="text" placeholder="O que você busca hoje?" name="text" class="input">
+          </div>
           <a href="./pages/login/login.html"><span class="material-symbols-outlined">person</span></a>
           <a href="#" id="cartToggle"><span class="material-symbols-outlined">shopping_cart</span></a>
           <a href="#"><span class="material-symbols-outlined">favorite</span></a>
         </div>
       </section>
-      <ul class="categorias">
-        <li><a href="./pages/products/products.html?category=clothes">Roupas</a></li>
-        <li><a href="./pages/products/products.html?category=cosmetics">Cosméticos</a></li>
-        <li><a href="./pages/products/products.html?category=materials">Materiais</a></li>
-        <li><a href="./pages/products/products.html?category=handmade">Artesanato</a></li>
-        <li><a href="./pages/products/products.html?category=plants">Plantas</a></li>
-        <li><a href="./pages/products/products.html?category=furniture">Móveis</a></li>
-      </ul>
-
     </nav>
   </header>
+
   <main>
-    <section class="slide-container">
-      <div class="slide">
-        <img src="./imgs/img-descontos.png">
-        <div class="gradient-overlay"></div>
-        <div class="legenda">
-          <h2>Crie sua conta</h2>
-          <p>Faça login agora e tenha acesso a descontos de até 50% em todo site.</p>
-        </div>
+    <div class="tela">
+      <img src="./imgs/img-frete.png">
+      <div class="gradient-overlay"></div>
+      <div class="legenda-tela">
+        <h2>Nossa Essência</h2>
+        <p>Amor, carinho e sustentabilidade em cada detalhe.</p>
+      </div>
+    </div>
+
+    <section class="ads-container">
+      <div class="ads">
+        <h2>Crie sua conta</h2>
+        <p>Faça login agora e tenha acesso a descontos de até 50% em todo site.</p>
       </div>
 
-      <div class="slide">
-        <img src="./imgs/img-frete.png">
-        <div class="gradient-overlay"></div>
-        <div class="legenda">
-          <h2>Frete Grátis</h2>
-          <p>Aproveite compras e devoluções gratuitas em nosso site.</p>
-        </div>
+      <div class="ads">
+        <h2>Frete Grátis</h2>
+        <p>Aproveite compras e devoluções gratuitas em nosso site.</p>
       </div>
 
-      <div class="slide">
-        <img src="./imgs/img-essencia.jpg">
-        <div class="gradient-overlay"></div>
-        <div class="legenda">
-          <h2>Nossa Essência</h2>
-          <p>Amor, carinho e sustentabilidade em cada detalhe.</p>
-        </div>
-      </div>
-
-      <div class="slide">
-        <img src="./imgs/img-excelencia.jpg">
-        <div class="gradient-overlay"></div>
-        <div class="legenda">
-          <h2>Excelência Verde</h2>
-          <p>Produtos de alta qualidade, ambientalmente conscientes.</p>
-        </div>
+      <div class="ads">
+        <h2>Excelência Verde</h2>
+        <p>Produtos de alta qualidade, ambientalmente conscientes.</p>
       </div>
     </section>
 
-    <div class="paginacao">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-
-    <h2 class="subtitle">Destaques</h2>
+    <h2 class="subtitle">Mais Comprados</h2>
 
     <section class="destaque-produtos">
       <div class="produto">
@@ -231,6 +209,6 @@
   <script src="./scripts/cart.js"></script>
   <script src="./scripts/popup.js"></script>
   <script src="./scripts/mobile-menu.js"></script>
+  <script src="./scripts/search.js"></script>
 </body>
-
 </html>

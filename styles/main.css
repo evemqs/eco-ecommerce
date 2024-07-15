@@ -1,5 +1,5 @@
 main {
-  background-color: #615044;
+  background-color: #d0b098;
   overflow: hidden;
 }
 
@@ -10,7 +10,7 @@ main #voltar-inicio {
   padding: 0.5rem;
 
   h2 a {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: 400;
     font-family: "Nunito", sans-serif;
@@ -29,7 +29,7 @@ main .route {
   right: -450px;
   width: 100vw;
   max-width: 400px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   max-height: 100%;
   padding: 1rem;
   transition: right 0.75s;
