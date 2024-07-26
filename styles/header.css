@@ -103,6 +103,7 @@ header ul li a:hover {
     display: none;
   }
 }
+
 @media screen and (max-width: 768px) {
   .container-search span {
     display: none;
@@ -111,4 +112,19 @@ header ul li a:hover {
   .icons a:last-child {
     display: none;
   }
+  .categorias {
+    display: none;
+  }
+  .categorias.active {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 50%;
+    border-bottom: 1px solid #fcf3e34a;
+    backdrop-filter: blur(15px);
+  }
+
 }

@@ -10,7 +10,7 @@
 main #payment-data {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
   font-family: "Nunito", sans-serif;
   display: flex;
   justify-content: center;
@@ -114,6 +114,7 @@ main #payment-data {
   border: 2px solid rgb(84, 68, 57);
   border-radius: 5px;
   padding: 0.5rem;
+  color: white;
 }
 
 #cartList-products {
@@ -144,14 +145,16 @@ main #payment-data {
   font-weight: 700;
 }
 
-.confirmDiv {
-  background-color: #5c564b;
+.confirmDiv { 
+  background-color: #736053;
   border-radius: 1rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  color: white;
+  margin: 5rem 5rem;
 }
 
 .voltar {
@@ -170,3 +173,8 @@ main #payment-data {
     padding: 0.5rem 2%;
   }
 }
+
+#payment-section{
+    margin-top: 5rem;
+}
+
