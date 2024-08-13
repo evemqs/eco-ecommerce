@@ -8,19 +8,27 @@
 }
 
 main #payment-data {
-  max-width: 1240px;
-  margin: 0 auto;
   padding: 2rem;
   font-family: "Nunito", sans-serif;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   font-weight: 600;
 
   h1 {
     text-align: center;
     font-size: 2rem;
   }
+}
+
+fieldset {
+  border-color: #544439;
+  border-radius: 0.5rem;
+}
+
+fieldset legend{
+  font-size: 2rem;
+  text-align: center;
 }
 
 #address-form {
@@ -40,6 +48,7 @@ main #payment-data {
 #back {
   color: white;
 }
+
 .payment-options-section {
   padding: 1rem;
   display: flex;
@@ -71,16 +80,31 @@ main #payment-data {
 }
 
 #paypal-button {
-  background-color: lightblue;
+  background-image: url("https://i0.wp.com/danabalicki.com/wp-content/uploads/2016/06/paypal-button-blue.png?ssl=1");
+  background-size: cover; 
+  background-repeat: no-repeat; 
   border: none;
   padding: 0.5rem;
   border-radius: 5px;
+  width: 8rem; 
+  height: 3rem; 
+  cursor: pointer;
+  margin-bottom: 1rem;
 }
+#paypal-button:hover{
+  opacity: 80%;
+}
+
+#pixis, #boletus {
+  margin-bottom: 1rem;
+}
+
 
 .mensage {
   text-align: center;
   font-size: 1.5rem;
 }
+
 
 .cart-container {
   background-color: #544439;
@@ -132,8 +156,9 @@ main #payment-data {
 }
 .container-input-parcelas {
   display: flex;
+  justify-content: center;  
   align-items: center;
-  justify-content: space-evenly;
+  gap: 1rem;
 }
 
 #installments {
@@ -143,6 +168,14 @@ main #payment-data {
   border-radius: 10px;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
+  border-style: none;
+  text-align: center;
+}
+
+.confirm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rem;
 }
 
 .confirmDiv { 
@@ -154,7 +187,6 @@ main #payment-data {
   align-items: center;
   gap: 2rem;
   color: white;
-  margin: 5rem 5rem;
 }
 
 .voltar {
@@ -166,6 +198,20 @@ main #payment-data {
   #payment-data {
     flex-direction: column;
   }
+  #address-form {
+    padding: 0rem;
+  }
+  .cart-container{
+    border-radius: 0px;
+  }
+  .buttons{
+    margin: 2rem;
+  }
+  .confirmDiv{
+
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -175,6 +221,27 @@ main #payment-data {
 }
 
 #payment-section{
-    margin-top: 5rem;
+  display: flex;
+  max-width: 100%;
+  margin: 6.8rem;
 }
 
+.cart {
+  margin-top: 3.5rem;
+}
+
+
+.invalid {
+    border: 1px solid rgb(209, 13, 13);
+    background-color: #fdd;
+  }
+.invalid-label {
+    color: rgb(209, 13, 13);
+  }
+
+.buttons a{
+  color: rgb(255, 255, 255);
+}
+.confirm .buttons button{
+  color: white;
+}
